@@ -20,8 +20,7 @@ input_pas = driver.find_element(By.ID, pass_field)
 input_pas.send_keys("SuperSecretPassword!")
 
 button_click = driver.find_element(By.CSS_SELECTOR, "button.radius" )
-button_click.send_keys(Keys.ENTER)
-
+button_click.click()
 login_element = driver.find_element(By.XPATH, "//i[contains(@class, 'fa-sign-in')]")
 
 print("Текст плашки:", login_element.text)

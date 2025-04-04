@@ -12,7 +12,7 @@ driver.get("http://uitestingplayground.com/dynamicid")
 
 button_click = driver.find_element(By.CSS_SELECTOR, "button[type='button'].btn-primary")
 
-button_click.send_keys(Keys.ADD)
+button_click.click()
 
 
 sleep(200)
