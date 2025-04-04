@@ -9,6 +9,6 @@ from selenium.webdriver.common.keys import Keys
 driver.get("http://uitestingplayground.com/classattr")
 button_click = driver.find_element(By.CSS_SELECTOR, "button.btn.btn-primary")
 
-button_click.send_keys(Keys.ADD)
+button_click.click()
 
 sleep(10)
